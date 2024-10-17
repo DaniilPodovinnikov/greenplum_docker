@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+    gp:
+      build: .
+      container_name: greenplum
+      restart: always
+      ports:
+        - "25432:5432"
